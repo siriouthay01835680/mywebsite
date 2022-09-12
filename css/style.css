@@ -1,0 +1,73 @@
+/*
+File: style.css
+Aria Siriouthay aria_siriouthay@student.uml.edu
+Created on September 9th, 2022
+Assignment: creating your own webpage
+The external file for CSS styling.
+*/
+
+/* set the main background image and text attributes */
+body{
+    background-image:url(../images/hellokitty.jpg);
+    color:black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6em;
+    font-size: 16px;
+    margin:0;
+}
+/* to style the body of the webpage */
+/* margin = outside space, padding = inside space */
+.container{
+    background-color:rgba(255, 255, 255, 0.7); /* initalization of color values, decimal provides color transparency  */
+    border:10px white double;
+    width:80%; /* percentage of parent rather than a fixed value */
+    margin:auto;
+    padding:20px;
+    
+}
+/* targets the header specifically to provide unique styling */
+.container h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+/* border around each body section */
+.box-1{
+    border: 2px white solid;
+    padding:20px;
+    margin:20px 0; /* sets top and bottom margin */
+}
+.box-2{
+    border:2px white solid;
+    padding:20px;
+    margin:20px 0;
+}
+.box-3{
+    border:2px white solid;
+    padding:20px;
+    margin:20px 0;
+}
+/* centering images */
+.box-3 img{
+    display: block; /* displays as a block element rather than inline */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* targets button element in box-3 */
+.box-3 button{
+    background-color: red;
+}
+/* styling for table elements */
+.table1{
+    border: 2px black solid;
+    padding:10px;
+}
+.table2{
+    border: 2px black solid;
+    padding:10px;
+}
+/*adding color to links*/
+a{
+    text-decoration: none;
+    color:deeppink;
+}

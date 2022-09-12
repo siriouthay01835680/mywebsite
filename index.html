@@ -1,0 +1,154 @@
+<!--
+File: index.html
+Aria Siriouthay aria_siriouthay@student.uml.edu
+Assignment: Creating your own webpage
+Created on September 9th, 2022
+The purpose of my website is to serve as an introduction! 
+It includes my pets, my hobbies, and my favorite foods.
+W3 schools, HTML and CSS crash course videos aided in the
+creation of this website.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!-- character encoding for file -->
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- link to css styling in external file -->
+  </head>
+  <body>
+    <!-- class to contain the entire body of the website -->
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Hi there! My name is Aria Siriouthay, I am 21 years old and currently live in Dracut but 
+          was born and raised in Lowell. I am a senior in Computer Science at Umass Lowell. This 
+          is my first GUI learning experience, so my goal in this class is to strengthen my GUI
+          knowledge and learn some new skills.
+          <br> Read on to learn more about me!
+        </p>
+        <!-- body consists of 3 separate sections for organization
+        and to aid in the css styling -->
+        <!-- class to hold the first section of webpage content -->
+        <div class="box-1"> 
+          <h3>My Pets</h3>
+          <!-- photos -->
+          <!-- alt serves to provide context if image fails to load, or for accessiblity reasons -->
+          <img src = "images/gracie.jpg" height = "225" width = "200" alt = "My cat Gracie">
+          <img src = "images/tango.jpg" height = "225" width = "200" alt = "My cat Tango">
+          <!-- class for table1 -->
+          <div class="table1">
+            <table>
+              <!-- initalizing the labels for the columns -->
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Color</th>
+                  <th>Personality</th>
+                </tr>
+              </thead>
+              <!-- contents of given columns -->
+              <tbody>
+                <tr>
+                  <td>Gracie</td>
+                  <td>1</td>
+                  <td>Grey and White</td>
+                  <td>Playful and sweet</td>
+                </tr>
+                <tr>
+                  <td>Tango</td>
+                  <td>15</td>
+                  <td>Black</td>
+                  <td>Affectionate and talkative</td>
+                </tr>
+              </tbody>
+            </table> <!-- end of table contents -->
+        </div> <!-- end of table1 class -->
+        <!-- in-text link, target="_blank" opens link in new tab -->
+          <p> The grey cat is named Gracie. I adopted her nearly 2 months ago from the 
+            <a href = "https://www.lowellhumanesociety.org/" target="_blank">Lowell Humane Society</a>. 
+            She is only 1 year old and is a ball of energy! If you haven't noticed from the photo, 
+            she does not have a tail. She was originally a stray that was found with a
+            severe injury to her tail, which required an amputation.
+            Despite the lack of tail, she is a very happy girl now!</p>
+          <p> The black cat is named Tango (don't worry, he still has his tail). He is about 15 years old, 
+            he used to be my grandmother's cat but I became his primary caretaker last year. 
+            Although he is old in age, he is young in spirit! He loves attention and getting treats. </p>
+      </div> <!-- end of box-1 -->
+      <!-- class to hold second section of body content -->
+      <div class="box-2">
+        <h3>My Hobbies</h3>
+        <p>When I'm not taking care of my cats, I enjoy spending my time doing my nails. Currently, I only do nails on myself as a hobby.
+          I'm not completely confident in my abilities to work on others, but maybe one day I'll change my mind! I find it relaxing and
+          an outlet to express my creativity. My love for nails and nail art began when I was in high school.
+        </p>
+        <!-- photos -->
+        <img src = "images/nails.jpg" width = "200" alt = "nails">
+      </div> <!-- end of box-2 -->
+        <!-- start of box-3, last inner-body section -->
+        <div class="box-3">
+          <p>I also enjoy going out to eat. My boyfriend and I like finding new, interesting restaurants to try out.
+            My favorite foods are sushi, ramen, and anything matcha!
+            While I have lost track of all the places I've eaten at, I'll talk about my long-time
+            favorite Japanese ramen spot in Boston, Ma.
+          </p>
+          <h4> Ganko Ittetsu Ramen </h4>
+          <!-- links -->
+          <a href = "https://www.google.com/maps/place/Ganko+Ittetsu+Ramen/@42.3432045,-71.1256689,17z/data=!3m2!4b1!5s0x89e379bfba9ee733:0x2c034736ccc8c5f6!4m5!3m4!1s0x89e379bfa288df59:0xa79121b5f2236b14!8m2!3d42.3432045!4d-71.1234802" 
+          target="_blank">318 Harvard St #3, Brookline, MA 02446</a> 
+          <!-- button: opens link to webpage in new tab when clicked -->
+          <form action="https://www.yelp.com/biz/ganko-ittetsu-ramen-brookline" target= "_blank">
+            <button type="submit">Yelp</button> <!-- type of button and its label that is visible on webpage -->
+          </form>
+          <p>When you bring up ramen, most people think of the typical instant ramen
+            that you can buy from the grocery store. However, ramen at this restaurant is
+            the closest to the authenic ramen you would see in Japan. After discovering this
+            spot nearly 3 years ago, I've stuck with it ever since as no other ramen shop can 
+            truly compare.
+          </p>
+          <!-- photos -->
+          <img src = "images/ganko.jpg" alt = "Ganko Ittetsu Ramen">
+          <img src = "images/menu.jpg" alt = "Menu"> 
+          <p>I like to try something different each time I come here, but my absolute
+            favorites would have to be the Shoyu 1910 and the Gantetsu Shoyu.
+          </p>
+          <p>If you are ever in Boston and are craving a delicious comforting soup, 
+            this is the place to go!
+          </p>
+        </div> <!-- end of box-3 -->
+      <!-- table2: to summarize overall page content -->
+      <!-- exists inside of container class -->
+      <h3>Summary</h3>
+      <div class="table2">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Hobbies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aria Siriouthay</td>
+              <td>21</td>
+              <td>Taking care of my pets, nails, and going out to eat</td>
+            </tr>
+          </tbody>
+        </table>
+    </div> <!-- end of table2 class-->
+    <p>Thank you so much for reading!</p>
+    <!-- provides copyright message at footer of page -->
+    <footer>
+      <p>Copyright &copy; 2022, Aria Siriouthay's Website</p>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+          
+    </footer>
+  </div>  <!-- end of container -->
+  </body>
+</html>
